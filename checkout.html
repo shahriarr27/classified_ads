@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classified Ads</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/fonts/icomoon/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css" />
+  <link rel="icon" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <header id="header-wrap">
+
+    <div class="top-bar-user-control">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-xs-12">
+            <div class="welcome">
+              <p>You are Loged in as: <span>Steve Jobs</span></p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-xs-12">
+            <div class="header-top-right">
+              <ul class="ml-auto">
+                <li>
+                  <a href="chat.html" class="nav-link"><i class="icon icon-chat"></i><span
+                      class="sr-only">Chat</span></a>
+                  <div class="count"><span>3</span></div>
+                </li>
+                <li>
+                  <a href="notification.html" class="nav-link"><i class="icon icon-bell-o"></i><span
+                      class="sr-only">Notification</span></a>
+                  <div class="count"><span>1</span></div>
+                </li>
+                <li><a href="main.html" class="nav-link"><i class="icon icon-th-list"></i><span
+                      class="sr-only">Ads</span></a>
+                </li>
+                <li class="dropleft">
+                  <a href="#" class="nav-link" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="false" aria-expanded="false"><i class="icon icon-user"></i><span
+                      class="sr-only">User</span>
+                  </a>
+
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="main.html"><i class="icon icon-dashboard2"></i><span>My
+                        Ads</span></a>
+                    <a class="dropdown-item" href="wallet.html"><i class="icon icon-account_balance_wallet"></i><span>My
+                        Wallet</span></a>
+                    <a class="dropdown-item" href="statistics.html"><i
+                        class="icon icon-bar-chart"></i><span>Statistics</span></a>
+                    <a class="dropdown-item" href="feedback.html"><i
+                        class="icon icon-message"></i><span>Feedback</span></a>
+                    <a class="dropdown-item" href="setting.html"><i
+                        class="icon icon-settings"></i><span>Settings</span></a>
+                    <a class="dropdown-item" href="index.html"><i class="icon icon-sign-out"></i><span>Log
+                        Out</span></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-wrapper">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg bg-white scrolling-navbar p-0 my-auto">
+          <a href="index.html" class="navbar-brand"><img src="assets/images/logo-2.png" alt="Logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+					<div class="collapse navbar-collapse lateral-left" id="main-navbar">
+						<button class="navbar-toggler close" type="button" data-toggle="collapse" data-target="#main-navbar"
+							aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							<i class="fas fa-times"></i>
+						</button>
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="about.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  About us
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="about.html">About Us</a>
+                  <a class="dropdown-item" href="categories.html">Category</a>
+                  <a class="dropdown-item" href="how-it-works.html">How it works</a>
+                  <a class="dropdown-item" href="register.html">Register</a>
+                  <a class="dropdown-item" href="login.html">Log In</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ad-listing.html">
+                  Ads
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">
+                  Contact Us
+                </a>
+              </li>
+              <li class="nav-item dropdown active">
+                <a class="nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Pages
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="faq.html">FAQ</a>
+                  <a class="dropdown-item" href="privacy.html">Privacy Policy</a>
+                  <a class="dropdown-item" href="hiring.html">Hiring</a>
+                  <a class="dropdown-item active" href="checkout.html">Checkout</a>
+                  <a class="dropdown-item" href="invoice.html">Invoice</a>
+                  <a class="dropdown-item" href="company.html">Company Ads</a>
+                  <a class="dropdown-item" href="ad-listing.html">Ads Listing</a>
+                  <a class="dropdown-item" href="ad-details.html">Ads Details</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="main.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dashboard
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="main.html">My Ads</a>
+                  <a class="dropdown-item" href="wallet.html">My Wallet</a>
+                  <a class="dropdown-item" href="statistics.html">Statistics</a>
+                  <a class="dropdown-item" href="feedback.html">Feedback</a>
+                  <a class="dropdown-item" href="follower.html">Followers</a>
+                  <a class="dropdown-item" href="setting.html">Settings</a>
+                </div>
+              </li>
+            </ul>
+            <div class="post-btn">
+              <a class="btn btn-common" href="post-ads.html"><i class="icon icon-edit"></i> <span>Post an Ad</span></a>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+  </header>
+
+  <div class="dashboard-container">
+    <div class="container">
+      <div class="checkout-wrapper">
+        <main class="main checkout">
+          <div class="page-content">
+            <div class="step-by">
+              <h3 class="title title-simple title-step"><a href="cart.html">Shopping Cart</a></h3>
+              <h3 class="title title-simple title-step active"><a href="checkout.html">Checkout</a></h3>
+              <h3 class="title title-simple title-step"><a href="order.html">Order Complete</a></h3>
+            </div>
+            <div class="whole-form-wrapper mb-4">
+              <form action="#" class="form">
+                <div class="row">
+                  <div class="col-lg-7 col-md-12">
+                    <div class="checkout-item-wrapper">
+                      <h3 class="title title-simple text-left">Billing Details</h3>
+                      <hr>
+                      <p class="login text-right mb-4">Already have an account? <a href="#">Log in</a></p>
+                        <div class="form-group">
+                          <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                              <label>First Name *</label>
+                              <input type="text" class="form-control" name="first-name" required />
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                              <label>Last Name *</label>
+                              <input type="text" class="form-control" name="last-name" required />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label>Company Name(Optional)</label>
+                          <input type="text" class="form-control" name="company-name" required="" />
+                        </div>
+                        <div class="form-group">
+                          <label>Country / Region *</label>
+                          <input type="text" class="form-control" name="country" required="" />
+                        </div>
+                        <div class="form-group">
+                          <label>Street Address *</label>
+                          <input type="text" class="form-control mb-3" name="address1" required=""
+                            placeholder="House number and Street name" />
+                          <input type="text" class="form-control" name="address2" required=""
+                            placeholder="Appartments, suite, unit etc ..." />
+                        </div>
+                        <div class="form-group">
+                          <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                              <label>Town / City *</label>
+                              <input type="text" class="form-control" name="city" required="" />
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                              <label>State / County *</label>
+                              <input type="text" class="form-control" name="state" required="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                              <label>Postcode / ZIP *</label>
+                              <input type="text" class="form-control" name="postcode" required="" />
+                            </div>
+                            <div class="col-md-6">
+                              <label>Phone *</label>
+                              <input type="text" class="form-control" name="phone" required="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label>Email address *</label>
+                          <input type="text" class="form-control" name="email-address" required="" />
+                        </div>
+                        <div class="form-group checks">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="create-account" name="create-account">
+                            <label class="custom-control-label" for="create-account">Create an account?</label>
+                          </div>
+                        </div>
+                        <div class="form-group checks">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="different-address"
+                              name="different-address">
+                            <label class="custom-control-label" for="different-address">Ship to a different
+                              address?</label>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <h3 class="title title-simple text-left mb-3">Additional information</h3>
+                          <label>Order Notes (optional)</label>
+                          <textarea class="form-control" cols="30" rows="3"
+                            placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
+                        </div>
+                    </div>
+                  </div>
+
+                  <aside class="col-lg-5 col-md-12">
+                    <div class="checkout-sidebar">
+                      <div class="summary mb-4">
+                        <h3 class="title title-simple text-left">Your Order</h3>
+                        <hr>
+                        <ul class="product-list">
+                          <h5 class="">Product</h5>
+                          <hr>
+                          <li class="name-price d-flex justify-content-between align-items-center">
+                            <div class="product-name">
+                              <span>Beige knitted shoes</span>
+                              <strong class="product-quantity">×&nbsp;1</strong>
+                            </div>
+                            <p class="product-total">$84.00</p>
+                          </li>
+                          <li class="name-price d-flex justify-content-between align-items-center">
+                            <div class="product-name">
+                              <span>Beige knitted shoes</span>
+                              <strong class="product-quantity">×&nbsp;1</strong>
+                            </div>
+                            <p class="product-total">$76.00</p>
+                          </li>
+                          <li class="name-price d-flex justify-content-between align-items-center">
+                            <div class="product-name">
+                              <span>Beige knitted shoes</span>
+                              <strong class="product-quantity">×&nbsp;1</strong>
+                            </div>
+                            <p class="product-total">$67.00</p>
+                          </li>
+                        </ul>
+                        <div class="summary-subtotal">
+                          <h5 class="summary-subtitle">Subtotal</h5>
+                          <p class="summary-subtotal-price">$426.99</p>
+                        </div>
+                        <hr>
+                        <div class="sumnary-shipping">
+                            <h5 class="summary-subtitle">Shipping</h5>
+                            <div class="form-group">
+                              <div class="custom-control custom-radio mb-2">
+                                <input type="radio" id="free-shipping" name="shipping" class="custom-control-input"
+                                  checked>
+                                <label class="custom-control-label" for="free-shipping">Free
+                                  Shipping</label>
+                              </div>
+
+                              <div class="custom-control custom-radio mb-2">
+                                <input type="radio" id="standard_shipping" name="shipping" class="custom-control-input">
+                                <label class="custom-control-label" for="standard_shipping">Standard</label>
+                              </div>
+                              <div class="custom-control custom-radio mb-2">
+                                <input type="radio" id="express_shipping" name="shipping" class="custom-control-input">
+                                <label class="custom-control-label" for="express_shipping">Express</label>
+                              </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="summary-subtotal">
+                          <div>
+                            <h4 class="summary-subtitle">Total</h4>
+                          </div>
+                          <div>
+                            <p class="summary-total-price">$426.99</p>
+                          </div>
+                        </div>
+                        <hr>
+
+                        <div id="payment_method" class="payment radio-type">
+                          <h5 class="summary-subtitle">Payment Methods</h5>
+                          <div class="card">
+                            <div class="card-header d-flex align-items-center">
+                              <i class="icon icon-bank"></i>
+                              <a href="#" role="button" class="btn" data-toggle="collapse" data-target="#pay1">
+                                Direct Bank Transfer
+                              </a>
+                            </div>
+                            <div id="pay1" class="collapse" data-parent="#payment_method">
+                              <div class="card-body">
+                                Make your payment directly into our bank account. Please use
+                                your Order ID as the payment reference. Your order will not be
+                                shipped until the funds have cleared in our account.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-header d-flex align-items-center">
+                              <i class="icon icon-money"></i>
+                              <a href="#" role="button" class="btn" data-toggle="collapse" data-target="#pay2">
+                                Check payments
+                              </a>
+                            </div>
+                            <div id="pay2" class="collapse" data-parent="#payment_method">
+                              <div class="card-body">
+                                Ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
+                                Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-header d-flex align-items-center">
+                              <i class="icon icon-cc-paypal"></i>
+                              <a href="#" role="button" class="btn" data-toggle="collapse" data-target="#pay3">
+                                PayPal
+                              </a>
+                            </div>
+                            <div id="pay3" class="collapse" data-parent="#payment_method">
+                              <div class="card-body">
+                                Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra
+                                non, semper suscipit, posuere a, pede. Donec nec justo eget
+                                felis facilisis fermentum.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <hr>
+                        <p class="checkout-info">Your personal data will used to process your order, support your
+                          experience throughout this website, and for other purposes described in our privacy policy.
+                        </p>
+                        <button type="submit" class="btn btn-dark btn-order">Place Order</button>
+                      </div>
+                    </div>
+                  </aside>
+                </div>
+            </form>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Cell Section -->
+  <section class="call-section-to-post-ads">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="inner-sec">
+        <div class="sec-title">
+          <h2>Do you have something to sell?</h2>
+          <div class="text">
+            <p>This is where businesses in Bangladesh trade, numerous business and industry services offered <br> to
+              trade and consumers.</p>
+          </div>
+        </div>
+        <a href="#" class="btn">Submit an ad</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Cell Section -->
+
+
+
+  <footer class="main-footer">
+    <div class="container">
+      <!-- Upper Box -->
+      <div class="upper-box">
+        <div class="row clearfix">
+          <div class="logo-column col-lg-7 col-md-6 col-sm-12 mb-4">
+            <div class="logo">
+              <a href="index.html"><img src="assets/images/footer-logo.png" alt="" /></a>
+            </div>
+            <div class="logo-text">The Usyoo classify ad company</div>
+          </div>
+          <div class="form-column col-lg-5 col-md-6 col-sm-12 mb-4">
+            <div class="email-form">
+              <form method="post" action="http://gico.io/onoo/contact.html">
+                <div class="form-group">
+                  <input class="form-control" type="email" name="email" placeholder="Enter Your Email Address" required>
+                  <button type="submit"><i class="icon icon-keyboard_arrow_right"></i></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <!--Widgets Section-->
+      <div class="widgets-section">
+        <div class="row clearfix">
+          <div class="big-column col-lg-6 col-md-12 col-sm-12">
+            <div class="row clearfix">
+              <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                <div class="footer-widget contact-widget">
+                  <h5>Contact</h5>
+                  <ul class="contact-list">
+                    <li>Tel: + 88 01912704287 <br> Mail: love@youremail.com</li> <br>
+                    <li>Add: 19 Stropking Street, <br> North Melbourne VIC 3051, USA</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                <div class="footer-widget links-widget">
+                  <h5>Popular Think</h5>
+                  <ul class="links">
+                    <li><a href="#">Membership</a></li>
+                    <li><a href="#">Banner Advertising</a></li>
+                    <li><a href="#">Promote your ad</a></li>
+                    <li><a href="#">Elecronic ad</a></li>
+                    <li><a href="#">Business ad</a></li>
+                    <li><a href="#">Real estate ad</a></li>
+                    <li><a href="#">Vehicles</a></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="big-column col-lg-6 col-md-12 col-sm-12">
+            <div class="row clearfix">
+              <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                <div class="footer-widget links-widget">
+                  <h5>Our Searches</h5>
+                  <ul class="links">
+                    <li><a href="#">Apartment for Rent</a></li>
+                    <li><a href="#">Apartment Low to hide</a></li>
+                    <li><a href="#">Offices for Buy</a></li>
+                    <li><a href="#">Offices for Rent</a></li>
+                    <li><a href="#">Properties</a></li>
+                    <li><a href="#">Our Services</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                <div class="footer-widget links-widget">
+                  <h5>Properties</h5>
+                  <ul class="links">
+                    <li><a href="#">Commercial</a></li>
+                    <li><a href="#">House</a></li>
+                    <li><a href="#">Office</a></li>
+                    <li><a href="#">Residencial</a></li>
+                    <li><a href="#">Tower</a></li>
+                    <li><a href="#">About Us</a></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <hr class="bottom">
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="copyright-social">
+          <div class="left">
+            <div class="copyright">
+              <p>Classified Ads &copy; 2020 All Rights Reserved</p>
+            </div>
+          </div>
+          <div class="right">
+            <div class="social-box">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <a href="#" class="back-to-top">
+    <i class="icon icon-angle-up"></i>
+  </a>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="assets/js/jQuery.print.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/custom-select.js"></script>
+</body>
+
+</html>

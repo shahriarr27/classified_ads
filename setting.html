@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classified Ads</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/fonts/icomoon/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
+  <link rel="icon" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <header id="header-wrap">
+
+    <div class="top-bar-user-control">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-xs-12">
+            <div class="welcome">
+              <p>You are Loged in as: <span>Steve Jobs</span></p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-xs-12">
+            <div class="header-top-right">
+              <ul class="ml-auto">
+                <li>
+                  <a href="chat.html" class="nav-link"><i class="icon icon-chat"></i><span class="sr-only">Chat</span></a>
+                  <div class="count"><span>3</span></div>
+                </li>
+                <li>
+                  <a href="notification.html" class="nav-link"><i class="icon icon-bell-o"></i><span
+                      class="sr-only">Notification</span></a>
+                  <div class="count"><span>1</span></div>
+                </li>
+                <li>
+                  <a href="main.html" class="nav-link"><i class="icon icon-th-list"></i><span class="sr-only">Ads</span>
+                  </a>
+                </li>
+                <li class="dropleft">
+                  <a href="#" class="nav-link" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false"><i class="icon icon-user"></i><span class="sr-only">User</span>
+                  </a>
+
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="main.html"><i class="icon icon-dashboard2"></i><span>My Ads</span></a>
+                    <a class="dropdown-item" href="wallet.html"><i class="icon icon-account_balance_wallet"></i><span>My Wallet</span></a>
+                    <a class="dropdown-item" href="statistics.html"><i class="icon icon-bar-chart"></i><span>Statistics</span></a>
+                    <a class="dropdown-item" href="feedback.html"><i class="icon icon-message"></i><span>Feedback</span></a>
+                    <a class="dropdown-item active" href="setting.html"><i class="icon icon-settings"></i><span>Settings</span></a>
+                    <a class="dropdown-item" href="index.html"><i class="icon icon-sign-out"></i><span>Log Out</span></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-wrapper">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg bg-white scrolling-navbar p-0 my-auto">
+          <a href="index.html" class="navbar-brand"><img src="assets/images/logo-2.png" alt="Logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+					<div class="collapse navbar-collapse lateral-left" id="main-navbar">
+						<button class="navbar-toggler close" type="button" data-toggle="collapse" data-target="#main-navbar"
+							aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							<i class="fas fa-times"></i>
+						</button>
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="about.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  About us
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="about.html">About Us</a>
+                  <a class="dropdown-item" href="categories.html">Category</a>
+                  <a class="dropdown-item" href="how-it-works.html">How it works</a>
+                  <a class="dropdown-item" href="register.html">Register</a>
+                  <a class="dropdown-item" href="login.html">Log In</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ad-listing.html">
+                  Ads
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">
+                  Contact Us
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Pages
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="faq.html">FAQ</a>
+                  <a class="dropdown-item" href="privacy.html">Privacy Policy</a>
+                  <a class="dropdown-item" href="hiring.html">Hiring</a>
+                  <a class="dropdown-item" href="checkout.html">Checkout</a>
+                  <a class="dropdown-item" href="invoice.html">Invoice</a>
+                  <a class="dropdown-item" href="company.html">Company Ads</a>
+                  <a class="dropdown-item" href="ad-listing.html">Ads Listing</a>
+                  <a class="dropdown-item" href="ad-details.html">Ads Details</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown active">
+                <a class="nav-link" href="main.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dashboard
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="main.html">My Ads</a>
+                  <a class="dropdown-item" href="wallet.html">My Wallet</a>
+                  <a class="dropdown-item" href="statistics.html">Statistics</a>
+                  <a class="dropdown-item" href="feedback.html">Feedback</a>
+                  <a class="dropdown-item" href="follower.html">Followers</a>
+                  <a class="dropdown-item active" href="setting.html">Settings</a>
+                </div>
+              </li>
+            </ul>
+            <div class="post-btn">
+              <a class="btn btn-common" href="post-ads.html"><i class="icon icon-edit"></i> <span>Post an Ad</span></a>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+  </header>
+
+  <div class="dashboard-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-12 mb-4">
+          <div class="setting-side">
+            <div class="pos-f-t">
+              <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="back-title">
+                  <a href="main.html"><i class="icon icon-angle-left"></i></a>
+                  <h4>Settings</h4>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#setting-toggle">
+                  <span class="icon icon-list"></span>
+                </button>
+              </nav>
+              <div class="collapse collapsed" id="setting-toggle">
+                <div class="settings-tabs-wrapper">
+                  <div class="nav flex-column nav-pills" id="settings-tabs" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="contact-details-tab" data-toggle="pill" href="#contact-details">Contact
+                      Details</a>
+                    <a class="nav-link" id="company-details-tab" data-toggle="pill" href="#company-details" role="tab"
+                      aria-controls="v-pills-profile" aria-selected="false">Company Details</a>
+                    <a class="nav-link" id="mobile-details-tab" data-toggle="pill" href="#mobile-details" role="tab">Mobile
+                      Settings</a>
+                    <a class="nav-link" id="chat-settings-tab" data-toggle="pill" href="#chat-settings" role="tab">Chat
+                      Settings</a>
+                    <a class="nav-link" id="feedback-settings-tab" data-toggle="pill" href="#feedback-settings"
+                      role="tab">Feedback Settings</a>
+                    <a class="nav-link" id="social-settings-tab" data-toggle="pill" href="#social-settings"
+                      role="tab">Social Settings</a>
+                    <a class="nav-link" id="notification-settings-tab" data-toggle="pill" href="#notification-settings"
+                      role="tab">Notification Settings</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-9 col-md-12">
+          <div class="main-wrapper">
+            <div class="settings-details-wrapper">
+              <div class="tab-content" id="setting-contents">
+                <div class="tab-pane fade show active" id="contact-details" role="tabpanel">
+                  <div class="details-wrapper">
+                    <div class="post_title">
+                      <h5 class="title">Contact Details</h5>
+                    </div>
+                    <hr>
+                    <div class="form-wrapper">
+                      <form action="#" method="">
+                        <div class="form-group">
+                          <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                              <label for="">First Name</label>
+                              <input type="text" class="form-control" placeholder="First Name" value="Justin">
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                              <label for="">Last Name</label>
+                              <input type="text" class="form-control" placeholder="Last Name" value="Alen">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="">Email Address</label>
+                          <input type="email" class="form-control" placeholder="Your Email" value="test@gmail.com">
+                        </div>
+                        <div class="form-group">
+                          <label for="">Gender</label>
+                          <select name="#" id="" class="custom-select">
+                            <option value="">Male</option>
+                            <option value="">Female</option>
+                            <option value="">Others</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="">Birthday</label>
+													<div class="cal-icon">
+														<input class="form-control datetimepicker" type="text">
+                            <i class="icon icon-calendar"></i>
+													</div>
+                        </div>
+                        <div class="form-group">
+                          <label for="">Address</label>
+                          <input type="text" class="form-control" name="" id="" placeholder="Address">
+                        </div>
+                        <div class="form-group">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="address">
+                            <label class="custom-control-label" for="address">Show this address on all my ads</label>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="">Location</label>
+                          <select name="#" id="" class="custom-select">
+                            <option value="" selected>Location</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <div class="button-right">
+                            <button type="submit" class="btn btn-primary">Save</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="company-details" role="tabpanel">
+                  <div class="details-wrapper">
+                    <div class="post_title">
+                      <h5 class="title">Company Details</h5>
+                    </div>
+                    <hr>
+                    <div class="form-wrapper">
+                      <form action="#" method="">
+                        <div class="form-group">
+                          <label for="">Company Name</label>
+                          <input type="text" class="form-control" placeholder="First Name" value="My Company">
+                        </div>
+                        <div class="form-group">
+                          <label for="">Domain</label>
+                          <input type="text" class="form-control" placeholder="Create a new domain">
+                        </div>
+                        <div class="form-group">
+                          <label for="">About</label>
+                          <textarea name="" placeholder="About your company" id="" cols="30" rows="3" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group">
+                          <div class="button-right">
+                            <button type="submit" class="btn btn-primary">Save</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="mobile-details" role="tabpanel">
+                  <div class="details-wrapper">
+                    <div class="post_title">
+                      <h5 class="title">Mobile Number Details</h5>
+                    </div>
+                    <hr>
+                    <div class="form-wrapper">
+                      <form action="#" method="">
+                        <div class="form-group current-number">
+                          <label for="">Current Number</label>
+                          <input type="text" class="form-control" value="0123456789">
+                          <div class="confirmed">
+                            <i class="icon icon-check-circle"></i>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="">Change Number</label>
+                          <input type="text" class="form-control" placeholder="Optional">
+                        </div>
+                        <div class="form-group">
+                          <div class="button-right">
+                            <button type="submit" class="btn btn-primary">Save</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="chat-settings" role="tabpanel">
+                  <div class="details-wrapper">
+                    <div class="post_title">
+                      <h5 class="title">Chat Settings</h5>
+                    </div>
+                    <hr>
+                    <div class="form-wrapper">
+                      <form action="#" method="">
+                        <div class="form-group">
+                          <div class="slide-checkbox d-flex align-items-center">
+                            <label class="switch" for="enablechat">
+                              <input type="checkbox" id="enablechat" />
+                              <div class="slider round"></div>
+                            </label>
+                            <label for="enablechat" class="custom-label ml-2">Receive messages</label>
+                          </div>
+                        </div>
+                      </form>
+                      <hr>
+                      <div class="instructions">
+                        <p>Chats help your customers to get in touch with you through messages on Jiji platform.</p><br>
+                      <p>Enable this option to get messages from new customers.</p> <br>
+                      <p class="nb font-weight-bold">N.B: If you don`t reply to your customers for a while, chats will be disabled automatically (existing chats will stay active)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="feedback-settings" role="tabpanel">
+                  <div class="details-wrapper">
+                    <div class="post_title">
+                      <h5 class="title">Feedback Settings</h5>
+                    </div>
+                    <hr>
+                    <div class="form-wrapper">
+                      <form action="#" method="">
+                        <div class="form-group">
+                          <div class="slide-checkbox d-flex align-items-center">
+                            <label class="switch" for="enablefeedback">
+                              <input type="checkbox" id="enablefeedback" checked disabled/>
+                              <div class="slider round"></div>
+                            </label>
+                            <label for="enablefeedback" class="custom-label ml-2">Receive and show feedback</label>
+                          </div>
+                        </div>
+                      </form>
+                      <hr>
+                      <div class="instructions">
+                        <p>Disabling feedback is available only for sellers with VIP and VIP+ subscription.</p> <br>
+                        <a href="#" class="subscribe">Subscribe and Disable</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="social-settings" role="tabpanel">
+                  <div class="details-wrapper">
+                    <div class="post_title">
+                      <h5 class="title">Social Connections</h5>
+                    </div>
+                    <hr>
+                    <div class="form-wrapper">
+                      <div class="connection-wrapper">
+                        <div class="social-connection">
+                          <div class="single-connection">
+                            <div class="social-name">
+                              <p class="facebook"><i class="fab fa-facebook-f"></i><span>Facebook</span></p>
+                            </div>
+                            <div class="connection-btn">
+                              <a href="#">Connect</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="social-connection">
+                          <div class="single-connection">
+                            <div class="social-name">
+                              <p class="whatsapp"><i class="fab fa-whatsapp"></i><span>Whatsapp</span></p>
+                            </div>
+                            <div class="connection-btn">
+                              <a href="#">Connect</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="notification-settings" role="tabpanel">
+                  <div class="details-wrapper">
+                    <div class="post_title">
+                      <h5 class="title">Notification Settings</h5>
+                    </div>
+                    <hr>
+                    <div class="form-wrapper">
+                      <form action="#" method="">
+                        <div class="email-notification notification-sec">
+                          <div class="heading">
+                            <h5>Email notifications</h5>
+                          </div>
+                          <div class="form-group">
+                            <div class="slide-checkbox d-flex align-items-center">
+                              <label class="switch" for="emailnotification1">
+                                <input type="checkbox" id="emailnotification1" class="slide-check" checked/>
+                                <div class="slider round"></div>
+                              </label>
+                              <label for="emailnotification1" class="custom-label off-color ml-2">Hot deals and recommendations
+                              </label>
+                            </div>
+                          </div>
+                          <hr>
+                          
+                          <div class="form-group">
+                            <div class="slide-checkbox d-flex align-items-center">
+                              <label class="switch" for="emailnotification2">
+                                <input type="checkbox" id="emailnotification2" checked/>
+                                <div class="slider round"></div>
+                              </label>
+                              <label for="emailnotification2" class="custom-label ml-2">Info about your Ads
+                              </label>
+                            </div>
+                          </div>
+                          <hr>
+                          <div class="form-group">
+                            <div class="slide-checkbox d-flex align-items-center">
+                              <label class="switch" for="emailnotification3">
+                                <input type="checkbox" id="emailnotification3"/>
+                                <div class="slider round"></div>
+                              </label>
+                              <label for="emailnotification3" class="custom-label ml-2">Premium packages
+                              </label>
+                            </div>
+                          </div>
+                          <hr>
+                          
+                          <div class="form-group">
+                            <div class="slide-checkbox d-flex align-items-center">
+                              <label class="switch" for="emailnotification4">
+                                <input type="checkbox" id="emailnotification4" checked/>
+                                <div class="slider round"></div>
+                              </label>
+                              <label for="emailnotification4" class="custom-label ml-2">Your subscriptions
+                              </label>
+                            </div>
+                          </div>
+                          <hr>
+                          
+                          <div class="form-group">
+                            <div class="slide-checkbox d-flex align-items-center">
+                              <label class="switch" for="emailnotification5">
+                                <input type="checkbox" id="emailnotification5" checked/>
+                                <div class="slider round"></div>
+                              </label>
+                              <label for="emailnotification5" class="custom-label ml-2">Messages
+                              </label>
+                            </div>
+                          </div>
+                          <hr>
+                          
+                          <div class="form-group">
+                            <div class="slide-checkbox d-flex align-items-center">
+                              <label class="switch" for="emailnotification6">
+                                <input type="checkbox" id="emailnotification6"/>
+                                <div class="slider round"></div>
+                              </label>
+                              <label for="emailnotification6" class="custom-label ml-2">Feedback
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sms-notification notification-sec">
+                          <div class="heading">
+                            <h5>SMS notifications</h5>
+                          </div>
+                          <div class="form-group">
+                            <div class="slide-checkbox d-flex align-items-center">
+                              <label class="switch" for="smsnotification1">
+                                <input type="checkbox" id="smsnotification1" checked/>
+                                <div class="slider round"></div>
+                              </label>
+                              <label for="smsnotification1" class="custom-label ml-2">Receive SMS info notification
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="web-notification notification-sec">
+                          <div class="heading">
+                            <h5>Web notifications</h5>
+                          </div>
+                          <div class="form-group">
+                            <div class="slide-checkbox d-flex align-items-center">
+                              <label class="switch" for="enablenotification1">
+                                <input type="checkbox" id="enablenotification1" checked/>
+                                <div class="slider round"></div>
+                              </label>
+                              <label for="enablenotification1" class="custom-label ml-2">Receive Jiji web notifications
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Cell Section -->
+  <section class="call-section-to-post-ads">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="inner-sec">
+        <div class="sec-title">
+          <h2>Do you have something to sell?</h2>
+          <div class="text">
+            <p>This is where businesses in Bangladesh trade, numerous business and industry services offered <br> to
+              trade and consumers.</p>
+          </div>
+        </div>
+        <a href="#" class="btn">Submit an ad</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Cell Section -->
+
+
+
+  <footer class="main-footer">
+    <div class="container">
+      <!-- Upper Box -->
+      <div class="upper-box">
+        <div class="row clearfix">
+          <div class="logo-column col-lg-7 col-md-6 col-sm-12 mb-4">
+            <div class="logo">
+              <a href="index.html"><img src="assets/images/footer-logo.png" alt="" /></a>
+            </div>
+            <div class="logo-text">The Usyoo classify ad company</div>
+          </div>
+          <div class="form-column col-lg-5 col-md-6 col-sm-12 mb-4">
+            <div class="email-form">
+              <form method="post" action="http://gico.io/onoo/contact.html">
+                <div class="form-group">
+                  <input class="form-control" type="email" name="email" placeholder="Enter Your Email Address" required>
+                  <button type="submit"><i class="icon icon-keyboard_arrow_right"></i></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <!--Widgets Section-->
+      <div class="widgets-section">
+        <div class="row clearfix">
+          <div class="big-column col-lg-6 col-md-12 col-sm-12">
+            <div class="row clearfix">
+              <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                <div class="footer-widget contact-widget">
+                  <h5>Contact</h5>
+                  <ul class="contact-list">
+                    <li>Tel: + 88 01912704287 <br> Mail: love@youremail.com</li> <br>
+                    <li>Add: 19 Stropking Street, <br> North Melbourne VIC 3051, USA</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                <div class="footer-widget links-widget">
+                  <h5>Popular Think</h5>
+                  <ul class="links">
+                    <li><a href="#">Membership</a></li>
+                    <li><a href="#">Banner Advertising</a></li>
+                    <li><a href="#">Promote your ad</a></li>
+                    <li><a href="#">Elecronic ad</a></li>
+                    <li><a href="#">Business ad</a></li>
+                    <li><a href="#">Real estate ad</a></li>
+                    <li><a href="#">Vehicles</a></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="big-column col-lg-6 col-md-12 col-sm-12">
+            <div class="row clearfix">
+              <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                <div class="footer-widget links-widget">
+                  <h5>Our Searches</h5>
+                  <ul class="links">
+                    <li><a href="#">Apartment for Rent</a></li>
+                    <li><a href="#">Apartment Low to hide</a></li>
+                    <li><a href="#">Offices for Buy</a></li>
+                    <li><a href="#">Offices for Rent</a></li>
+                    <li><a href="#">Properties</a></li>
+                    <li><a href="#">Our Services</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                <div class="footer-widget links-widget">
+                  <h5>Properties</h5>
+                  <ul class="links">
+                    <li><a href="#">Commercial</a></li>
+                    <li><a href="#">House</a></li>
+                    <li><a href="#">Office</a></li>
+                    <li><a href="#">Residencial</a></li>
+                    <li><a href="#">Tower</a></li>
+                    <li><a href="#">About Us</a></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <hr class="bottom">
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="copyright-social">
+          <div class="left">
+            <div class="copyright">
+              <p>Classified Ads &copy; 2020 All Rights Reserved</p>
+            </div>
+          </div>
+          <div class="right">
+            <div class="social-box">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <a href="#" class="back-to-top">
+    <i class="icon icon-angle-up"></i>
+  </a>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="assets/js/moment.min.js"></script>
+  <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/custom-select.js"></script>
+</body>
+
+</html>
